@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100 & family= Oxygen:wght@300 & family= Roboto:wght@500 & display=swap');
+
+        @font-face {
+            font-family: "Montserrat";
+            src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .blocks-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+
+        .block {
+            box-sizing: border-box;
+            overflow-y: auto;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .block1,
+        .block5 {
+            background-color: yellow;
+            width: 100%;
+            min-height: 15vh;
+            position: relative;
+        }
+
+            .block1::before {
+                content: attr(id); /* Display the id attribute */
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                width: 500px;
+                height: 75%;
+                background-color: white;
+                z-index: 1;
+                transform: translate(0, -50%);
+            }
+
+        .block2 {
+            background-color: #1b045c;
+            width: calc(25% - 20px);
+            height: 70vh;
+            transform: rotate(0deg);
+            margin: 10px;
+        }
+
+        .block3 {
+            background-color: #fb0303;
+            width: calc(25% - 20px);
+            height: 70vh;
+            transform: rotate(0deg);
+            margin: 10px;
+        }
+
+        .block4,
+        .block6 {
+            width: calc(25% - 20px);
+            height: 495px;
+            margin: 10px;
+            overflow-y: auto;
+        }
+
+        .block4 {
+            background-color: #f9f8f8;
+        }
+
+        .block6 {
+            background-color: #ec0505;
+        }
+
+        .block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .block5 {
+            background-color: yellow;
+            width: 100%;
+            min-height: 15vh;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            /* Adjust styles for tablets and larger screens */
+            .block3,
+            .block4,
+            .block6 {
+                width: calc(33.33% - 20px);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            /* Adjust styles for larger screens */
+            .block3,
+            .block4,
+            .block6 {
+                width: calc(25% - 20px);
+            }
+        }
+
+        @media print {
+            /* Styles for print */
+            body {
+                background-color: white;
+            }
+
+            .block {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+    <title>Комп'ютер.</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block block1" id="Плешкан О.П.">
+            Комп'ютер.
+        </div>
+        <div class="blocks-container">
+            <div class="block block2">
+                <img src="images.jpg" alt="PC Image">
+            </div>
+            <div class="block block3">
+                У світі комп'ютерів інновації розцвітали з появою ENIAC в 1946 році. ENIAC, величезна машина з більше ніж 17 тисячами вакуумних ламп, була першою електронною обчислювальною машиною та відзначалась величезними розмірами та споживанням електроенергії. Перші обчислювальні пристрої, такі як Атанасофф-Беррі Computer (ABC) в 1930-х та ENIAC, визначили еру комп'ютерів.
+
+            </div>
+            <div class="block block4">
+                У наступні роки настала ера мініатюризації. 1950-1960-і роки принесли транзисторні комп'ютери, замінюючи вакуумні лампи транзисторами. Такі системи, наприклад, UNIVAC, були меншими, надійнішими та більш енергоефективними. 1970-і роки відзначилися початком епохи мікропроцесорів, що веде до виникнення особистих комп'ютерів (PC).
+            </div>
+            <div class="block block6">
+                З 1980-х років особисті комп'ютери вирісши за розмірами, стали доступні широкому загалу. Apple та IBM грали ключову роль у популяризації ПК. Розвиток мікропроцесорів і технології вів до зменшення розмірів, підвищення продуктивності та універсалізації комп'ютерів.
+            </div>
+        </div>
+    </div>
+    <div class="block block5">
+        Зараз ми живемо в епоху потужних, компактних та високоефективних комп'ютерів. Інтеграція усіляких пристроїв, від ноутбуків та смартфонів до вбудованих систем та хмарних обчислень, визначає наше повсякденне технологічне середовище. Ця шляхетна історія від перших гігантських машин до сучасних інтелектуальних пристроїв свідчить про вражаючий прогрес в області обчислень і технологій.
+
+    </div>
+</body>
+
+</html>
