@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Елегантний і Яскравий Жіночий одяг</title>
+    <style>
+        /* Завдання 1 */
+        article {
+            outline: 2px solid #ff6f61;
+            resize: both;
+            cursor: pointer;
+            caret-color: #ff6f61;
+            border-radius: 12px;
+            border-image: url('border-image.png') 30 round;
+            border-image-width: 10px;
+            border-image-source: url('border-image.png');
+            border-image-slice: 20 fill;
+            border-image-repeat: repeat;
+            border-image-outset: 5px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            background: linear-gradient(to right, #ff6f61, #ffa07a);
+            text-decoration: underline wavy #ff6f61;
+            text-shadow: 2px 2px 2px #555;
+            transition-property: transform, box-shadow;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            transform: scale(1);
+            transform-origin: center center;
+        }
+
+            /* Завдання 2 */
+            article:hover {
+                transform: scale(1.03);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            }
+
+        /* Завдання 4 */
+        article {
+            transform: perspective(500px) rotateX(45deg);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #ffa07a;
+            padding: 1em;
+            text-align: center;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                font-size: 1.2em;
+                transition: color 0.3s ease-in-out;
+            }
+
+                nav a:hover {
+                    color: #ff6f61;
+                }
+
+        .top-buttons {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            display: flex;
+        }
+
+            .top-buttons a {
+                margin-left: 1em;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 0.5em 1em;
+                background-color: #ff6f61;
+                border-radius: 4px;
+                transition: background-color 0.3s ease-in-out;
+            }
+
+                .top-buttons a:hover {
+                    background-color: #e05a4e;
+                }
+
+        section {
+            margin: 2em;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        article {
+            flex: 1;
+            margin: 1em;
+            padding: 1.5em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #ff6f61;
+        }
+
+        p {
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Елегантний і Яскравий Жіночий одяг</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Весняне плаття</a></li>
+            <li><a href="#">Блузка</a></li>
+            <li><a href="#">Штани</a></li>
+            <li><a href="#">Аксесуари</a></li>
+        </ul>
+    </nav>
+
+    <div class="top-buttons">
+        <a href="../index.html">На головну сторінку</a>
+        <a href="../index.html">Контакти</a>
+    </div>
+
+    <section>
+        <article>
+            <h2>Найновіший тренд - Літня сукня.</h2>
+            <p>Один із найкращий варіантів, яка вражає своєю красою і елегантністю.</p>
+            <img src="suknya.jpg" alt="Весняне плаття">
+        </article>
+
+        <article>
+            <h2>Сорочка</h2>
+            <p>Ось найкращий варіант сорочки для літного сезону - легка, повітряна та стильна.</p>
+            <img src="soroczka.jpg" alt="Літня блузка">
+        </article>
+
+        <article>
+            <h2>Штани для будь-якого випадку.</h2>
+            <p>Зручні і модні штани, які підходять як для спорту, так і для повсякденного використання.</p>
+            <img src="sztany.jpg" alt="Штани" />
+        </article>
+
+        <article>
+            <h2>Рюкзак.</h2>
+            <p>Жіночий рюкзак - міцний і красивий рюкзак, для любого випадку в житті.</p>
+            <img src="rukzak.jpg" alt="Рюкзак" />
+        </article>
