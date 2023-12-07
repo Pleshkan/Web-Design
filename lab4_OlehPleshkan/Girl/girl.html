@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Перехід по посиланню при натисканні на малюнок</title>
+</head>
+<body>
+    <img src="set.jpg" alt="Зображення" />
+
+    <script>
+    function handleClick(event) {
+      // Отримати координати кліка
+      var x = event.clientX;
+      var y = event.clientY;
+
+      // Перевірити, чи клік потрапив у область малюнка
+      if (x >= 173 && x <= 502 && y >= 174 && y <= 348) {
+        // Відкрити посилання
+          window.location.href = "https://uk.wikipedia.org/wiki/%D0%A8%D0%BE%D1%80%D1%82%D0%B8";
+      } else if (x >= 502 && x <= 832 && y >= 174 && y <= 348) {
+          window.location.href = "https://uk.wikipedia.org/wiki/%D0%A1%D1%83%D0%BA%D0%BD%D1%8F";
+      } else if (x >= 832 && x <= 1092 && y >= 164 && y <= 338) {
+          window.location.href = "https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BF_(%D0%BE%D0%B4%D1%8F%D0%B3)";
+      }
+    }
+
+    // Підключити обробник події кліка до малюнка
+    document.querySelector("img").addEventListener("click", handleClick);
+    </script>
+</body>
+</html>

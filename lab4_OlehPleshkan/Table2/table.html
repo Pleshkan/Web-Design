@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблиця</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="audioChange.js"></script>
+</head>
+<body>
+    <a href="../lab4.html">Повернутися</a>
+    <table>
+        <tr>
+            <th colspan="4">Мої одногрупники.</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="groupmates/Ivan.html" onclick="changeAudio('groupmates/music/ShinunogaEwa.mp3', 'groupmates/video/Nalivay.mp4')" target="iframe_a">
+                    <img src="groupmates/pics/Ivan.jpg" alt="NoIvan" />
+                </a>
+                Пристая Іван Олександрович
+            </td>
+            <td>
+                <a href="groupmates/Roman.html" onclick="changeAudio('groupmates/music/Estrelar.mp3', 'groupmates/video/cats.mov')" target="iframe_a">
+                    <img src="groupmates/pics/Roman.jpg" alt="NoRoman" />
+                </a>
+                Орихівський Роман Васильович
+            </td>
+            <td>
+                <a href="groupmates/Daniel.html" onclick="changeAudio('groupmates/music/TimesMoveSlow.mp3', 'groupmates/video/oppenheimer.mp4')" target="iframe_a" class="changeAudio">
+                    <img src="groupmates/pics/Daniel.jpg">
+                </a>
+                Орос Данієль Антонович
+            </td>
+            <td>
+                <a href="groupmates/Sergiy.html" onclick="changeAudio('groupmates/music/DoinTime.flac', 'groupmates/video/dognbutterfly.mp4')" target="iframe_a">
+                    <img src="groupmates/pics/Sergiy.jpg" alt="NoSergiy" />
+                </a>
+                Прилевський Сергій Іванович
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <iframe name="iframe_a" src="" class="iframeclass"></iframe>
+            </td>
+        </tr>
+    </table>
+    <audio id="myAudio" controls>
+        <source src="" type="audio/mpeg">
+    </audio>
+    <video id="myVideo" controls>
+        <source src="">
+    </video>
+</body>
+</html>
